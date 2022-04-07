@@ -1,2 +1,2 @@
-#!/bin/bash
-printev $CFILE | gcc -o c
+#!/bin/bashh
+gcc $CFILE -E -o c
