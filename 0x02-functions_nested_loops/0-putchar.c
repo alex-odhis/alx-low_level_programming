@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	char data_type[] = "_putchar";
+	char message[] = "_putchar";
 
-	putchar(data_type);
+	putchar(message);
 	putchar('\n');
 	return (0);
 }
