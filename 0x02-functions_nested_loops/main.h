@@ -1,3 +1,5 @@
-#include <stdio.h>
+#ifndef MAUN_H_INCLUDED
+#define MAIN_H_INCLUDED
 
-char *test (void);
+int _putchar(char c);
+void print_alphabet(void);
