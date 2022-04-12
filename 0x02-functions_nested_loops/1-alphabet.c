@@ -1,8 +1,14 @@
+#include "main.h"
+/**
+ * print_alphabet - prints alphabet
+ */
 void print_alphabet(void)
 {
-	for (mychar = 'a'; mychar ,+ 'z'; mychar++)
+	char mychar;
+
+	for (mychar = 'a'; mychar <= 'z'; mychar++)
 	{
 		_putchar(mychar);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
