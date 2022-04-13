@@ -1,21 +1,15 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *main - check the code for Holberton School students.
- *Return: Always 0.
+ *_abs - Check Holberton
+ *@r: An integre input
+ *Description: This function returns absolute value of a number
+ *Return: Absolut value of number r
  */
-int main(void)
+int _abs(int r)
 {
-	int r;
-
-	r = _abs(-1);
-	printf("%d\n", r);
-	r = _abs(0);
-	printf("%d\n", r);
-	r = _abs(1);
-	printf("%d\n", r);
-	r = _abs(-98);
-	printf("%d\n", r);
-	return (0);
+	if (r >= 0)
+		return (r);
+	else
+		return (r * -1);
 }
