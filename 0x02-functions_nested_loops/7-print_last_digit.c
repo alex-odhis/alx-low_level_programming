@@ -1,4 +1,4 @@
-#i#i#include "main.h"
+#include "main.h"
 
 /**
  *print_last_digit - Check Holberton
