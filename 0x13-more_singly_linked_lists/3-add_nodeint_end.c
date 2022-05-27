@@ -2,8 +2,8 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - A function that adds a new node to the end of a linked list
- * @head: A pointer to list 
+ * add_nodeint_end - A function that adds a new node to the end of a list
+ * @head: A pointer to list
  * @n: An integer data value for the new node
  * Return: address of the inserted element
  */
