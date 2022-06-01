@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * binary_to_uint - function coverts binary to unsigned int
@@ -7,20 +8,20 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int base = 1, result = 0, len = 0;
+	int index;
+	unsigned int result = 0;
+	int slen = strlen(b);
+	int base = 1;
 
 	if (b == NULL)
 		return (0);
-	while (b[len])
-		len++;
-	while (len)
+	for (index = (slen - 1); index >= 0; index--)
 	{
-		if (b[len - 1] != '0' && b[len - 1] != '1')
+		if ((b[index] != '0') & (b[index] != '1'))
 			return (0);
-		if (b[len - 1] == '1')
+		if (b[index] == '1')
 			result += base;
 		base *= 2;
-		len--;
 	}
 	return (result);
 }
